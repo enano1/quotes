@@ -1,1 +1,1 @@
-web: gunicorn quotes.wsgi
+web: gunicorn quotescs412project.wsgi

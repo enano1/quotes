@@ -1,0 +1,32 @@
+<!--quotes/templates/quotes/show_all.html-->
+<html>
+    <head>
+        <title>Kanye West Quotes and Images</title>
+    
+        <link rel='stylesheet' type='text/css' href='/static/quotes/quotes_styles.css'>
+    </head>
+    <body>
+        <h1>Kanye West Quotes and Images</h1>
+        <br />
+        <button onclick="location.href='/quotes/'">Go back to the Home</button>
+        <br />
+        <button onclick="location.href='/quotes/quote/'">Get a random Kanye West Quote</button>
+        <br />
+        <button onclick="location.href='/quotes/about/'">About Page of Mr. West</button>
+        <br />
+
+        <ul>
+            {% for quote in quotes %}
+                <li>{{quote}}</li>
+                <br />
+            {% endfor %}
+        </ul>
+        <br />
+        <ul>
+            {% for image in images %}
+                <li><img src="{{image}}" alt="Kanye West" style='width:30%; height:auto'></li>
+                <br />
+            {% endfor %}
+        </ul>
+    </body>
+</html>

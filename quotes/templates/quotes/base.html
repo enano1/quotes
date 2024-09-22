@@ -2,13 +2,13 @@
 
 <html>
     <head>
+        {% load staticfiles %}
         <title>Kanye West Quote and Image Generator</title>
         <link rel='stylesheet' type='text/css' href='/static/quotes/quotes_styles.css'>
     </head>
     <body>
         <h1>Welcome to the Kanye/Ye West Page!</h1>
         <br />
-        {% load static %}
         <a href='/quote/'><button>Get a random Kanye West quote and image</button></a>
         <br />
         <button onclick="location.href='/show_all/'">See all Kanye West quotes and images</button>

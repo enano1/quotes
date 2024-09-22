@@ -39,7 +39,7 @@ def base(request):
     Get a random quote and image from the quote/image list.
     '''
 
-    template_name = 'quotes/base.html'
+    template_name = '/base.html'
 
     my_quote = "I'm not a businessman, I'm a business, man."
 
@@ -53,7 +53,7 @@ def quote(request):
     Get a random quote and image from the quote/image list
     '''
 
-    template_name = 'quotes/quote.html'
+    template_name = '/quote.html'
     
     random_quote = random.choice(quotes_list)
     random_image = random.choice(images_list)
@@ -66,7 +66,7 @@ def show_all(request):
     Display all of the images and quotes
     '''
 
-    template_name = 'quotes/show_all.html'
+    template_name = '/show_all.html'
     
     return render(request, template_name, {'quotes': quotes_list, 'images': images_list})
 
@@ -75,6 +75,6 @@ def about(request):
     Function to handle the URL request for the about page.
     '''
 
-    template_name = 'quotes/about.html'
+    template_name = '/about.html'
     
     return render(request, template_name)

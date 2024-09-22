@@ -1,1 +1,1 @@
-https://git.heroku.com/quotescs412project.git
+https://quotes-cs412.vercel.app/

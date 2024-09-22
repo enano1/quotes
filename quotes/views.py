@@ -20,16 +20,16 @@ quotes_list = [
 ]
 
 images_list = [
-    '/static/quotes/images/KW1.jpg',
-    '/static/quotes/images/KW2.jpg',
+    '/quotes/images/KW1.jpg',
+    '/quotes/images/KW2.jpg',
 
-    '/static/quotes/images/KW3.jpg',
-    '/static/quotes/images/KW4.jpg',
+    '/quotes/images/KW3.jpg',
+    '/quotes/images/KW4.jpg',
 
-    '/static/quotes/images/KW5.jpg',
-    '/static/quotes/images/KW6.jpg',
+    '/quotes/images/KW5.jpg',
+    '/quotes/images/KW6.jpg',
 
-    '/static/quotes/images/KW7.jpg',
+    '/quotes/images/KW7.jpg',
   
 ]
 

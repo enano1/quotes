@@ -43,8 +43,7 @@ def base(request):
 
     my_quote = "I'm not a businessman, I'm a business, man."
 
-    my_image = '/static/quotes/images/KW7.jpg'
-
+    my_image = 'quotes/images/KW7.jpg'
 
     return render(request, template_name, {'quote': my_quote, 'image': my_image})
 def quote(request):

@@ -26,5 +26,8 @@ urlpatterns = [
                                             ## and associate it with URLs in another file
     
     
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) #+ operator concatenates a list
+] 
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) #+ operator concatenates a list
                                                                     # the static is a list, so we are concating a list with a list
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

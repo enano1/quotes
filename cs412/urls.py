@@ -22,10 +22,8 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('quotes/', include('quotes.urls')), ## we create it with URLS in another file
-        
-    path('hw/', include('hw.urls')), ## we create it with URLS in another file
-                                    ## and associate it with URLs in another file
+    path('', include('quotes.urls')), ## we create it with URLS in another file
+                                            ## and associate it with URLs in another file
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) #+ operator concatenates a list
                                                                     # the static is a list, so we are concating a list with a list

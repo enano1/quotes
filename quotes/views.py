@@ -41,11 +41,10 @@ def base(request):
 
     template_name = 'quotes/base.html'
 
-    my_quote = "I'm not a businessman, I'm a business, man."
+    random_quote = random.choice(quotes_list)
+    random_image = random.choice(images_list)
 
-    my_image = 'quotes/images/KW7.jpg'
-
-    return render(request, template_name, {'quote': my_quote, 'image': my_image})
+    return render(request, template_name, {'quote': random_quote, 'image': random_image})
 def quote(request):
     '''
     Function to handle the URL request for the quote page.
